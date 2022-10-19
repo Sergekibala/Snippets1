@@ -7,4 +7,39 @@
     android:layout_height="match_parent"
     tools:context=".a1_layout_xml.A11_LinearLayoutXml">
 
+  <androidx.core.widget.NestedScrollView
+      android:id="@+id/IdNestedScrollView"
+      android:layout_width="381dp"
+      android:layout_height="26dp"
+      android:fillViewport="true"
+      android:textAlignment="gravity"
+      app:layout_constraintStart_toStartOf="parent"
+      tools:layout_editor_absoluteY="125dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    </LinearLayout>
+  </androidx.core.widget.NestedScrollView>
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+      android:id="@+id/ConstraintLayout"
+      android:layout_width="123dp"
+      android:layout_height="66dp"
+      android:layout_marginTop="8dp"
+      app:layout_constraintTop_toBottomOf="@+id/IdNestedScrollView"
+      tools:layout_editor_absoluteX="-2dp">
+
   </androidx.constraintlayout.widget.ConstraintLayout>
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+      android:id="@+id/IdConstraintLayout2"
+      android:layout_width="89dp"
+      android:layout_height="66dp"
+      app:layout_constraintTop_toBottomOf="@+id/IdNestedScrollView"
+      tools:layout_editor_absoluteX="118dp">
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
